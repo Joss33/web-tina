@@ -7,6 +7,16 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        primary: {
+          yellow: '#FEC602',
+          violet: '#350A6D',
+          'violet-secondary': '#4E1480',
+        },
+        accent: {
+          violet: '#8E80E2'
+        }
+      },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
