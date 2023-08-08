@@ -1,15 +1,15 @@
-import Link from "next/link"
+import Link from "next/link";
 
 export const Footer = () => {
   return (
     <>
-      <footer className="bg-gray-50 dark:bg-gray-800">
+      <footer className="bg-gray-50 ">
         <div className="p-4 py-6 mx-auto max-w-screen-xl md:p-8 lg:-10">
           <div className="grid grid-cols-2 gap-8 lg:grid-cols-6">
             <div className="col-span-2">
               <a
                 href="#"
-                className="flex items-center mb-2 text-2xl font-semibold text-gray-900 sm:mb-0 dark:text-white"
+                className="flex items-center mb-2 text-2xl font-semibold text-gray-900 sm:mb-0 "
               >
                 <img
                   src="/assets/images/LOGO-TINA.svg"
@@ -21,7 +21,7 @@ export const Footer = () => {
                 <li>
                   <a
                     href="#"
-                    className="text-gray-500 hover:text-gray-900 dark:hover:text-white dark:text-gray-400"
+                    className="text-gray-500 hover:text-gray-900 "
                   >
                     <svg
                       className="w-5 h-5"
@@ -40,7 +40,7 @@ export const Footer = () => {
                 <li>
                   <a
                     href="#"
-                    className="text-gray-500 hover:text-gray-900 dark:hover:text-white dark:text-gray-400"
+                    className="text-gray-500 hover:text-gray-900 "
                   >
                     <svg
                       className="w-5 h-5"
@@ -59,7 +59,7 @@ export const Footer = () => {
                 <li>
                   <a
                     href="#"
-                    className="text-gray-500 hover:text-gray-900 dark:hover:text-white dark:text-gray-400"
+                    className="text-gray-500 hover:text-gray-900 "
                   >
                     <svg
                       className="w-5 h-5"
@@ -74,10 +74,10 @@ export const Footer = () => {
               </ul>
             </div>
             <div className="lg:mx-auto">
-              <h2 className="mb-6 text-base font-bold text-primary-violet uppercase dark:text-white">
+              <h2 className="mb-6 text-base font-bold text-primary-violet uppercase ">
                 Acerca de
               </h2>
-              <ul className="text-gray-500 dark:text-gray-400">
+              <ul className="text-gray-500 ">
                 <li className="mb-4">
                   <Link href="/about" className=" hover:underline">
                     Conoce a Tina
@@ -96,10 +96,10 @@ export const Footer = () => {
               </ul>
             </div>
             <div className="lg:mx-auto">
-              <h2 className="mb-6 text-base font-bold text-primary-violet uppercase dark:text-white">
+              <h2 className="mb-6 text-base font-bold text-primary-violet uppercase ">
                 Ayuda
               </h2>
-              <ul className="text-gray-500 dark:text-gray-400">
+              <ul className="text-gray-500 ">
                 <li className="mb-4">
                   <a href="#" className="hover:underline">
                     Centro de ayuda
@@ -118,10 +118,10 @@ export const Footer = () => {
               </ul>
             </div>
             <div className="lg:mx-auto">
-              <h2 className="mb-6 text-base font-bold text-primary-violet uppercase dark:text-white">
+              <h2 className="mb-6 text-base font-bold text-primary-violet uppercase ">
                 Ir al Blog
               </h2>
-              <ul className="text-gray-500 dark:text-gray-400">
+              <ul className="text-gray-500 ">
                 <li className="mb-4">
                   <a href="#" className="hover:underline">
                     Línea de atención: 302 340 4430
@@ -139,15 +139,13 @@ export const Footer = () => {
                 </li>
               </ul>
             </div>
-            
           </div>
-          <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-          <span className="block text-sm text-center text-gray-500 dark:text-gray-400">
-            © 2023{" "}
-            . Todos los derechos reservados.
+          <hr className="my-6 border-gray-200 sm:mx-auto  lg:my-8" />
+          <span className="block text-lg text-center text-gray-900 ">
+            © 2023 . Todos los derechos reservados.
           </span>
         </div>
       </footer>
     </>
-  )
-}
+  );
+};

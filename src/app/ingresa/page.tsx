@@ -1,9 +1,8 @@
 import Head from "next/head";
 
-export default function signIn(){
+export default function signIn() {
   return (
     <>
-
       <Head>
         <title> Ingresar | Tina</title>
       </Head>
@@ -15,10 +14,11 @@ export default function signIn(){
               <div className="flex justify-between items-center">
                 <div className="max-w-md ">
                   <h3 className="text-5xl font-bold text-primary-violet/80">
-                    Conecta, comparte y prospera usando tu experiencia y habilidades
+                    Conecta, comparte y prospera usando tu experiencia y
+                    habilidades
                   </h3>
                 </div>
-                <form className="bg-white w-full max-w-xs py-5 px-5 rounded-2xl shadow" >
+                <form className="bg-white w-full max-w-xs py-5 px-5 rounded-2xl shadow">
                   <div>
                     <input
                       type="email"
@@ -30,7 +30,6 @@ export default function signIn(){
                     />
                   </div>
                   <div>
-                    
                     <input
                       type="password"
                       name="password"
@@ -40,7 +39,7 @@ export default function signIn(){
                       required
                     />
                   </div>
-                  
+
                   <button
                     type="submit"
                     className="w-full text-white bg-violet-600 hover:bg-violet-700 focus:ring-4 focus:outline-none focus:ring-violet-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mb-2"
@@ -48,7 +47,6 @@ export default function signIn(){
                     Ingresa a su cuenta
                   </button>
                   <div className="flex items-center justify-center">
-                    
                     <a
                       href="#"
                       className="text-sm font-medium text-gray-800 hover:underline mb-3"
@@ -63,7 +61,6 @@ export default function signIn(){
                   >
                     Crear cuenta
                   </button>
-                  
                 </form>
               </div>
             </div>
@@ -71,5 +68,5 @@ export default function signIn(){
         </section>
       </main>
     </>
-  )
+  );
 }

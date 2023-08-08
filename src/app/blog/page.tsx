@@ -3,33 +3,36 @@ import Head from "next/head";
 export default function Blog() {
   return (
     <>
-
       <Head>
         <title> Blog | Tina</title>
       </Head>
 
       <main role="main" className="mt-20">
         <div className="max-w-screen-xl w-full mx-auto mb-10">
-          <section role="banner" >
-            <div className="bg-[url('/assets/images/blog/blog@2x.png')] w-full md:h-[22.3125rem] bg-cover object-cover flex items-center">
-            </div>
+          <section role="banner">
+            <div className="bg-[url('/assets/images/blog/blog@2x.png')] w-full h-[22.3125rem] bg-cover object-cover flex items-center"></div>
           </section>
         </div>
 
         <div className="flex justify-between px-4 mx-auto max-w-screen-xl">
           <div className="hidden mb-6 xl:block lg:w-52">
             <div className="sticky top-24">
-              <img className="rounded-full w-36 h-36 mb-8" src="/assets/images/Enmascarar grupo 18@2x.png" alt="Extra large avatar" />
+              <img
+                className="rounded-full w-36 h-36 mb-8"
+                src="/assets/images/Enmascarar grupo 18@2x.png"
+                alt="Extra large avatar"
+              />
               <div className="mb-4">
                 <p className="text-lg">
                   Por:
-                  <p className="font-bold">
-                    Jessica Pérez
-                  </p>
                 </p>
+                <p className="text-lg font-bold">Jessica Pérez</p>
               </div>
               <div className="flex justify-between items-center">
-                <aside className="flex flex-wrap" aria-label="Share social media">
+                <aside
+                  className="flex flex-wrap"
+                  aria-label="Share social media"
+                >
                   <a
                     href="#"
                     className="inline-flex items-center py-2 px-3 mr-2 text-xs font-medium text-gray-900 no-underline bg-white rounded-full border border-gray-200 focus:outline-none hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-200 "
@@ -80,42 +83,67 @@ export default function Blog() {
               </div>
             </div>
           </div>
-          <article className="mx-auto w-full max-w-2xl format format-sm sm:format-base lg:format-lg format-blue dark:format-invert">
+          <article className="mx-auto w-full max-w-2xl format format-sm sm:format-base lg:format-lg format-blue ">
             <header className="mb-4 lg:mb-6 not-format">
-              <h1 className="mb-4 text-3xl font-semibold leading-tight text-gray-900 lg:mb-6 lg:text-4xl dark:text-white">
-                Cómo afectaría la reforma a pensionados que ganan más de $10 millones al mes
+              <h1 className="mb-4 text-3xl font-semibold leading-tight text-gray-900 lg:mb-6 lg:text-4xl ">
+                Cómo afectaría la reforma a pensionados que ganan más de $10
+                millones al mes
               </h1>
               <p className="text-center mb-4">
-                El investigador pensional Marcelo Duque explicó a EL HERALDO como la reforma tributaria golpea a los pensionados.
+                El investigador pensional Marcelo Duque explicó a EL HERALDO
+                como la reforma tributaria golpea a los pensionados.
               </p>
-              <img src="/assets/images/Enmascarar grupo 19@2x.png" className="block text-center rounded-lg mb-4" alt="" />
+              <img
+                src="/assets/images/Enmascarar grupo 19@2x.png"
+                className="block text-center rounded-lg mb-4"
+                alt=""
+              />
               <p className="text-zinc-600 text-xl mb-4">
-                El pasado martes 23 de agosto, el gobierno del presidente Gustavo Petro, encabezado por el ministro de Hacienda, José Antonio Ocampo, presentó ante el Congreso de la República el nuevo proyecto de reforma tributaria, que ha generado polémica por plantear aumentar los impuestos de las personas naturales y hasta a las pensionadas.
+                El pasado martes 23 de agosto, el gobierno del presidente
+                Gustavo Petro, encabezado por el ministro de Hacienda, José
+                Antonio Ocampo, presentó ante el Congreso de la República el
+                nuevo proyecto de reforma tributaria, que ha generado polémica
+                por plantear aumentar los impuestos de las personas naturales y
+                hasta a las pensionadas.
               </p>
               <p className="text-zinc-600 text-xl mb-4">
-                De acuerdo con lo plasmado en la reforma, los pensionados que tengan ingresos mensuales después de los $10 millones pagarán más impuestos.
+                De acuerdo con lo plasmado en la reforma, los pensionados que
+                tengan ingresos mensuales después de los $10 millones pagarán
+                más impuestos.
               </p>
               <p className="text-zinc-600 text-xl mb-4">
-                Debido a ello, se ha generado un revuelo entre los ciudadanos, pues desconocen de qué se trata este nuevo impuesto y como les afectaría el bolsillo. 
+                Debido a ello, se ha generado un revuelo entre los ciudadanos,
+                pues desconocen de qué se trata este nuevo impuesto y como les
+                afectaría el bolsillo.
               </p>
               <p className="text-zinc-600 text-xl mb-4">
-                Para el Dr. Marcelo Duque, investigador pensional y director de Cómo me pensiono, esta tributación que busca imponer el Gobierno nacional, va en contra del bienestar de los pensionados pues afirma que por Constitución se consideran un público en condición de vulnerabilidad. 
+                Para el Dr. Marcelo Duque, investigador pensional y director de
+                Cómo me pensiono, esta tributación que busca imponer el Gobierno
+                nacional, va en contra del bienestar de los pensionados pues
+                afirma que por Constitución se consideran un público en
+                condición de vulnerabilidad.
               </p>
               <p className="text-zinc-600 text-xl mb-4">
-                v“No estamos de acuerdo con que se le imponga impuesto a los pensionados y las razones son varias, la primera es que si bien es cierto, no hay un número muy grande de personas que superen una pensiones de $10 millones, la realidad es que un pensionado que gana $10 millones no es una persona rica. Es una persona que honestamente trabajó toda su vida y tuvo la posibilidad de tener un buen cargo”, aseguró Duque.
+                v“No estamos de acuerdo con que se le imponga impuesto a los
+                pensionados y las razones son varias, la primera es que si bien
+                es cierto, no hay un número muy grande de personas que superen
+                una pensiones de $10 millones, la realidad es que un pensionado
+                que gana $10 millones no es una persona rica. Es una persona que
+                honestamente trabajó toda su vida y tuvo la posibilidad de tener
+                un buen cargo”, aseguró Duque.
               </p>
             </header>
           </article>
           <div className="hidden mb-6 lg:block lg:w-72">
             <div className="sticky top-24">
-              <img src="/assets/images/Grupo 974@2x.png" alt="google analitys" />
+              <img
+                src="/assets/images/Grupo 974@2x.png"
+                alt="google analitys"
+              />
             </div>
           </div>
         </div>
-
-
-
       </main>
     </>
-  )
+  );
 }

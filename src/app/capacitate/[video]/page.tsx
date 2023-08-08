@@ -12,7 +12,7 @@ export default function CapacitateVideo(){
         <div className="max-w-screen-md w-full mx-auto mb-10">
 
           <div className="pt-10 pb-10">
-            <video className="w-full h-auto max-w-full border border-gray-200 rounded-lg dark:border-gray-700 " controls>
+            <video className="w-full h-auto max-w-full border border-gray-200 rounded-lg  " controls>
               <source src="/docs/videos/flowbite.mp4" type="video/mp4"/>
               Your browser does not support the video tag.
             </video>
@@ -67,10 +67,10 @@ export default function CapacitateVideo(){
                 </h3>
               </div>
               <div className="col-12">
-                <article className="p-6 mb-6  text-base bg-white rounded-lg dark:bg-gray-900">
+                <article className="p-6 mb-6  text-base bg-white rounded-lg ">
                   <footer className="flex justify-between items-center mb-2">
                     <div className="flex items-center">
-                      <p className="inline-flex items-center mr-3 text-sm text-gray-900 dark:text-white">
+                      <p className="inline-flex items-center mr-3 text-sm text-gray-900 ">
                         <img
                           className="mr-2 w-6 h-6 rounded-full"
                           src="https://flowbite.com/docs/images/people/profile-picture-5.jpg"
@@ -78,7 +78,7 @@ export default function CapacitateVideo(){
                         />
                         Jese Leos
                       </p>
-                      <p className="text-sm text-gray-600 dark:text-gray-400">
+                      <p className="text-sm text-gray-600 ">
                         <time  dateTime="2022-02-12" title="February 12th, 2022">
                           Feb. 12, 2022
                         </time>
@@ -86,13 +86,13 @@ export default function CapacitateVideo(){
                     </div>
                     
                   </footer>
-                  <p className="text-gray-500 dark:text-gray-400">
+                  <p className="text-gray-500 ">
                     Much appreciated! Glad you liked it ☺️
                   </p>
                   <div className="flex items-center mt-4 space-x-4">
                     <button
                       type="button"
-                      className="flex items-center text-sm text-gray-500 hover:underline dark:text-gray-400"
+                      className="flex items-center text-sm text-gray-500 hover:underline "
                     >
                       <svg
                         aria-hidden="true"
@@ -115,10 +115,10 @@ export default function CapacitateVideo(){
                 </article>
               </div>
               <div className="col-12">
-                <article className="p-6 mb-6  text-base bg-white rounded-lg dark:bg-gray-900">
+                <article className="p-6 mb-6  text-base bg-white rounded-lg ">
                   <footer className="flex justify-between items-center mb-2">
                     <div className="flex items-center">
-                      <p className="inline-flex items-center mr-3 text-sm text-gray-900 dark:text-white">
+                      <p className="inline-flex items-center mr-3 text-sm text-gray-900 ">
                         <img
                           className="mr-2 w-6 h-6 rounded-full"
                           src="https://flowbite.com/docs/images/people/profile-picture-5.jpg"
@@ -126,7 +126,7 @@ export default function CapacitateVideo(){
                         />
                         Jese Leos
                       </p>
-                      <p className="text-sm text-gray-600 dark:text-gray-400">
+                      <p className="text-sm text-gray-600 ">
                         <time  dateTime="2022-02-12" title="February 12th, 2022">
                           Feb. 12, 2022
                         </time>
@@ -134,13 +134,13 @@ export default function CapacitateVideo(){
                     </div>
                     
                   </footer>
-                  <p className="text-gray-500 dark:text-gray-400">
+                  <p className="text-gray-500 ">
                     Much appreciated! Glad you liked it ☺️
                   </p>
                   <div className="flex items-center mt-4 space-x-4">
                     <button
                       type="button"
-                      className="flex items-center text-sm text-gray-500 hover:underline dark:text-gray-400"
+                      className="flex items-center text-sm text-gray-500 hover:underline "
                     >
                       <svg
                         aria-hidden="true"
@@ -163,10 +163,10 @@ export default function CapacitateVideo(){
                 </article>
               </div>
               <div className="col-12">
-                <article className="p-6 mb-6  text-base bg-white rounded-lg dark:bg-gray-900">
+                <article className="p-6 mb-6  text-base bg-white rounded-lg ">
                   <footer className="flex justify-between items-center mb-2">
                     <div className="flex items-center">
-                      <p className="inline-flex items-center mr-3 text-sm text-gray-900 dark:text-white">
+                      <p className="inline-flex items-center mr-3 text-sm text-gray-900 ">
                         <img
                           className="mr-2 w-6 h-6 rounded-full"
                           src="https://flowbite.com/docs/images/people/profile-picture-5.jpg"
@@ -174,7 +174,7 @@ export default function CapacitateVideo(){
                         />
                         Jese Leos
                       </p>
-                      <p className="text-sm text-gray-600 dark:text-gray-400">
+                      <p className="text-sm text-gray-600 ">
                         <time  dateTime="2022-02-12" title="February 12th, 2022">
                           Feb. 12, 2022
                         </time>
@@ -182,13 +182,13 @@ export default function CapacitateVideo(){
                     </div>
                     
                   </footer>
-                  <p className="text-gray-500 dark:text-gray-400">
+                  <p className="text-gray-500 ">
                     Much appreciated! Glad you liked it ☺️
                   </p>
                   <div className="flex items-center mt-4 space-x-4">
                     <button
                       type="button"
-                      className="flex items-center text-sm text-gray-500 hover:underline dark:text-gray-400"
+                      className="flex items-center text-sm text-gray-500 hover:underline "
                     >
                       <svg
                         aria-hidden="true"
