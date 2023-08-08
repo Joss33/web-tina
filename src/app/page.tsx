@@ -13,32 +13,25 @@ export default function Home() {
 
         <div className="max-w-screen-xl w-full mx-auto">
 
-        <section role="banner">
-          <div className="bg-primary-violet-secondary w-full h-auto py-10 md:h-[28.125rem] bg-cover object-cover flex items-center">
-            <div className="max-w-screen-xl w-full px-5 md:px-12 lg:px-20 mx-auto">
-              <div className="max-w-md">
-                <h3 className="text-3xl font-normal text-white mb-3">
-                  Usa tus habilidades y genera ingresos extra
-                </h3>
-                <p className="text-5xl font-bold text-primary-yellow  mb-10">
-                  Ofreciendo tus servicios 
-                </p>
-                <Link
-                  href={'/registro'}
-                 
-                >
-                  <button  className=" w-auto text-primary-violet-secondary shadow bg-white hover:bg-primary-violet-secondary/10 focus:ring-4 focus:ring-primary-yellow/30 rounded-full text-3xl px-8 py-2 mr-2 mb-2 focus:outline-none font-bold flex items-center justify-center relative">
-                    Regístrate
-                  </button>
-                </Link>
+          <section role="banner">
+            <div className="bg-[url('/assets/images/home/CAPASITACIONES.jpg')] w-full md:h-[357px] bg-cover object-cover flex items-center">
+              <div className="max-w-screen-xl w-full px-5 md:px-12 lg:px-20 mx-auto">
+                <div className="max-w-sm ">
+                  <h3 className="text-3xl text-white">
+                    Usa tus habilidades y genera ingresos extra
+                  </h3>
+                  <h2 className="text-5xl text-primary-yellow font-bold mb-4">
+                    Ofrecivendo tus servicios
+                  </h2>
+                  <button type="button" className="text-primary-violet shadow bg-white hover:bg-primary-violet/10 focus:ring-4 focus:ring-primary-violet/30 rounded-full text-3xl px-8 py-2.5 mr-2 mb-2 focus:outline-none font-bold flex items-center justify-center">Regístrate</button>
+                </div>
               </div>
             </div>
-          </div>
-          <div className="w-full flex items-center">
-            <div className="w-1/2 h-5 bg-accent-violet"></div>
-            <div className="w-1/2 h-5 bg-primary-yellow"></div>
-          </div>
-        </section>
+            <div className="w-full flex items-center">
+              <div className="w-1/2 h-5 bg-accent-violet"></div>
+              <div className="w-1/2 h-5 bg-primary-yellow"></div>
+            </div>
+          </section>
 
           <section role="banner">
             <h2 className="text-primary-violet text-center text-4xl max-w-2xl px-10 mx-auto mt-10 mb-4">
@@ -94,7 +87,7 @@ export default function Home() {
 
           </section>
 
-          <section>
+          {/* <section>
             <div className="max-w-screen-xl w-full px-5 md:px-12 lg:px-20 mx-auto">
               <div className="bg-primary-violet-secondary w-full h-auto py-10 md:h-[18.125rem] bg-cover object-cover flex items-center">
                 <div className="row w-full"> 
@@ -117,7 +110,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-          </section>
+          </section> */}
 
         </div>
         
