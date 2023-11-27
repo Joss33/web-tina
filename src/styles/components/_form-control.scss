@@ -1,0 +1,16 @@
+.form-control{
+  background-color: white;
+  width: 100%;
+  display: block;
+  padding: 10px 20px;
+  color: rgb(55 65 81 / var(--tw-text-opacity));
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(55 65 81 / var(--tw-border-opacity));;
+}
+
+.form-control::placeholder{
+  color: rgb(55 65 81 / var(--tw-text-opacity));
+}

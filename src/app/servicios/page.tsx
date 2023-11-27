@@ -1,126 +1,142 @@
+import { Search } from "@/components/Search";
 import Head from "next/head";
 
 export default function Servicios() {
   return (
     <>
       <Head>
-        <title> Servicios | Tina</title>
+        <title> Servicios | PERENNIALS</title>
       </Head>
 
-      <main role="main" className="mt-20">
+      <main role="main" >
+
+      <Search title="¡Te echamos una mano!" />
+
         <section>
           <div className="bg-zinc-200 py-6">
             <div className="max-w-screen-xl w-full px-5 md:px-12 lg:px-20 mx-auto">
-              <ul className="row justify-center">
-                <li className="col-auto">
-                  <input
-                    type="checkbox"
-                    id="react-option"
-                    value=""
-                    className="hidden peer"
-                  />
-                  <label
-                    htmlFor="react-option"
-                    className="inline-flex items-center justify-between w-full text-xs px-3 py-1.5 text-primary-violet bg-white rounded-full cursor-pointer  peer-checked:border-blue-600 hover:text-gray-600  peer-checked:text-gray-600 hover:bg-gray-50 shadow-md "
-                  >
-                    <div className="block">
-                      <div className="w-full text-sm font-light">
-                        Salud y bienestar
-                      </div>
-                    </div>
-                  </label>
-                </li>
-                <li className="col-auto">
-                  <input
-                    type="checkbox"
-                    id="flowbite-option"
-                    value=""
-                    className="hidden peer"
-                  />
-                  <label
-                    htmlFor="flowbite-option"
-                    className="inline-flex items-center justify-between w-full text-xs px-3 py-1.5 text-primary-violet bg-white rounded-full cursor-pointer  peer-checked:border-blue-600 hover:text-gray-600  peer-checked:text-gray-600 hover:bg-gray-50 shadow-md "
-                  >
-                    <div className="block">
-                      <div className="w-full text-sm font-light">
-                        Servicios domesticos
-                      </div>
-                    </div>
-                  </label>
-                </li>
-                <li className="col-auto">
-                  <input
-                    type="checkbox"
-                    id="angular-option"
-                    value=""
-                    className="hidden peer"
-                  />
-                  <label
-                    htmlFor="angular-option"
-                    className="inline-flex items-center justify-between w-full text-xs px-3 py-1.5 text-primary-violet bg-white rounded-full cursor-pointer  peer-checked:border-blue-600 hover:text-gray-600  peer-checked:text-gray-600 hover:bg-gray-50 shadow-md "
-                  >
-                    <div className="block">
-                      <div className="w-full text-sm font-light">
-                        Ocio y entretenimiento
-                      </div>
-                    </div>
-                  </label>
-                </li>
-                <li className="col-auto">
-                  <input
-                    type="checkbox"
-                    id="angular-option"
-                    value=""
-                    className="hidden peer"
-                  />
-                  <label
-                    htmlFor="angular-option"
-                    className="inline-flex items-center justify-between w-full text-xs px-3 py-1.5 text-primary-violet bg-white rounded-full cursor-pointer  peer-checked:border-blue-600 hover:text-gray-600  peer-checked:text-gray-600 hover:bg-gray-50 shadow-md "
-                  >
-                    <div className="block">
-                      <div className="w-full text-sm font-light">
-                        Educacion y formacion
-                      </div>
-                    </div>
-                  </label>
-                </li>
-                <li className="col-auto">
-                  <input
-                    type="checkbox"
-                    id="angular-option"
-                    value=""
-                    className="hidden peer"
-                  />
-                  <label
-                    htmlFor="angular-option"
-                    className="inline-flex items-center justify-between w-full text-xs px-3 py-1.5 text-primary-violet bg-white rounded-full cursor-pointer  peer-checked:border-blue-600 hover:text-gray-600  peer-checked:text-gray-600 hover:bg-gray-50 shadow-md "
-                  >
-                    <div className="block">
-                      <div className="w-full text-sm font-light">
-                        Asesoramiento empresarial
-                      </div>
-                    </div>
-                  </label>
-                </li>
-              </ul>
+              <div className="hidden md:block">
+                <nav role="navigation">
+                  <ul className="row justify-center">
+                    <li className="col-auto">
+                      <input
+                        type="checkbox"
+                        id="servicio-01"
+                        name="servicios"
+                        value="servicio-01"
+                        className="hidden peer"
+                      />
+                      <label
+                        htmlFor="servicio-01"
+                        className="inline-flex items-center justify-between w-full text-xs px-3 py-1.5 text-primary-violet-01 bg-white rounded-full cursor-pointer peer-checked:bg-primary-yellow-01 hover:text-gray-600  peer-checked:text-primary-violet-01 peer-checked:font-semibold  hover:bg-gray-50 shadow-md "
+                      >
+                        <div className="block">
+                          <div className="w-full text-sm">
+                            Salud y bienestar
+                          </div>
+                        </div>
+                      </label>
+                    </li>
+                    <li className="col-auto">
+                      <input
+                        type="checkbox"
+                        id="servicio-02"
+                        name="servicios"
+                        value="servicio-02"
+                        className="hidden peer"
+                      />
+                      <label
+                        htmlFor="servicio-02"
+                        className="inline-flex items-center justify-between w-full text-xs px-3 py-1.5 text-primary-violet-01 bg-white rounded-full cursor-pointer peer-checked:bg-primary-yellow-01 hover:text-gray-600  peer-checked:text-primary-violet-01 peer-checked:font-semibold  hover:bg-gray-50 shadow-md "
+                      >
+                        <div className="block">
+                          <div className="w-full text-sm">
+                            Servicios domesticos
+                          </div>
+                        </div>
+                      </label>
+                    </li>
+                    <li className="col-auto">
+                      <input
+                        type="checkbox"
+                        id="servicio-03"
+                        name="servicios"
+                        value="servicio-03"
+                        className="hidden peer"
+                      />
+                      <label
+                        htmlFor="servicio-03"
+                        className="inline-flex items-center justify-between w-full text-xs px-3 py-1.5 text-primary-violet-01 bg-white rounded-full cursor-pointer peer-checked:bg-primary-yellow-01 hover:text-gray-600  peer-checked:text-primary-violet-01 peer-checked:font-semibold  hover:bg-gray-50 shadow-md "
+                      >
+                        <div className="block">
+                          <div className="w-full text-sm">
+                            Ocio y entretenimiento
+                          </div>
+                        </div>
+                      </label>
+                    </li>
+                    <li className="col-auto">
+                      <input
+                        type="checkbox"
+                        id="servicio-04"
+                        name="servicios"
+                        value="servicio-04"
+                        className="hidden peer"
+                      />
+                      <label
+                        htmlFor="servicio-04"
+                        className="inline-flex items-center justify-between w-full text-xs px-3 py-1.5 text-primary-violet-01 bg-white rounded-full cursor-pointer peer-checked:bg-primary-yellow-01 hover:text-gray-600  peer-checked:text-primary-violet-01 peer-checked:font-semibold  hover:bg-gray-50 shadow-md "
+                      >
+                        <div className="block">
+                          <div className="w-full text-sm">
+                            Educacion y formacion
+                          </div>
+                        </div>
+                      </label>
+                    </li>
+                    <li className="col-auto">
+                      <input
+                        type="checkbox"
+                        id="servicio-05"
+                        name="servicios"
+                        value="servicio-05"
+                        className="hidden peer"
+                      />
+                      <label
+                        htmlFor="servicio-05"
+                        className="inline-flex items-center justify-between w-full text-xs px-3 py-1.5 text-primary-violet-01 bg-white rounded-full cursor-pointer peer-checked:bg-primary-yellow-01 hover:text-gray-600  peer-checked:text-primary-violet-01 peer-checked:font-semibold  hover:bg-gray-50 shadow-md "
+                      >
+                        <div className="block">
+                          <div className="w-full text-sm">
+                            Asesoramiento empresarial
+                          </div>
+                        </div>
+                      </label>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+              <div className="block md:hidden">
+                <label htmlFor="categorias" className="block mb-2">Categorías</label>
+                <select name="" id="categorias" className="form-control">
+                  <option value="">Seleccione...</option>
+                  <option value="">Salud y bienestar</option>
+                  <option value="">Servicios domesticos</option>
+                  <option value="">Ocio y entretenimiento</option>
+                  <option value="">Educacion y formacion</option>
+                  <option value="">Asesoramiento empresarial</option>
+                </select>
+              </div>
             </div>
           </div>
 
           <div className="max-w-screen-xl w-full px-5 md:px-12 lg:px-20 mx-auto">
-            <div className="row">
-              <div className="col-8 mx-auto mt-5 mb-12">
-                <p className="text-center text-lg font-semibold text-primary-violet">
-                  Encuentra ayuda para instalar, arreglar, revisar y mantener en
-                  buen estado todas las redes y elementos eléctricos de tu hogar
-                </p>
-              </div>
-            </div>
-
-            <div className="row mb-10">
+           
+            <div className="row mb-10 mt-10">
               <div className="col-12 mb-10">
                 <div className="rounded-2xl overflow-hidden w-full">
-                  <div className="flex">
-                    <div className="bg-accent-violet px-4 py-10 flex-shrink-0 w-60">
+                  <div className="flex flex-col md:flex-row">
+                    <div className="bg-primary-violet-02 px-4 py-10 w-full md:flex-shrink-0 md:w-60">
                       <div className="flex justify-center h-full flex-col">
                         <h3 className="text-center text-white text-xl mb-5 font-bold">
                           Electricidad
@@ -132,15 +148,15 @@ export default function Servicios() {
                         </p>
                         <button
                           type="button"
-                          className="text-primary-violet mx-auto shadow bg-white hover:bg-primary-violet/10 focus:ring-4 focus:ring-primary-violet/30 rounded-full text-md px-8 py-1 mb-2 focus:outline-none font-bold flex items-center justify-center"
+                          className="text-primary-violet-01 mx-auto shadow bg-white hover:bg-primary-violet/10 focus:ring-4 focus:ring-primary-violet/30 rounded-full text-md px-8 py-1 mb-2 focus:outline-none font-bold flex items-center justify-center"
                         >
                           Ver más
                         </button>
                       </div>
                     </div>
-                    <div className="bg-zinc-200 flex-grow px-10 py-6">
+                    <div className="bg-zinc-200 flex-grow px-5 md:px-10 py-6">
                       <div className="row">
-                        <div className="col-4">
+                        <div className="col-12 col-md-4 mb-4">
                           <div className="bg-white border border-gray-200 rounded-3xl overflow-hidden shadow ">
                             <a href="#">
                               <img
@@ -149,7 +165,7 @@ export default function Servicios() {
                                 alt=""
                               />
                             </a>
-                            <div className="px-5 py-2 rounded-t-xl">
+                            <div className="px-3 py-2 rounded-t-xl">
                               <p className="font-normal text-gray-700 text-sm">
                                 Electricidad
                               </p>
@@ -187,14 +203,14 @@ export default function Servicios() {
                               <div className="flex items-center text-xs mb-4">
                                 <a
                                   href="#"
-                                  className="underline text-primary-violet-secondary mr-1"
+                                  className="underline text-primary-violet-01 mr-1"
                                 >
                                   Ver Aliados
                                 </a>
                                 <p>prestadores de servicios</p>
                               </div>
 
-                              <div className="rounded-full px-4 py-1 bg-accent-violet flex items-center text-white">
+                              <div className="rounded-full px-4 py-1 bg-primary-violet-02 flex items-center text-white">
                                 <svg
                                   xmlns="http://www.w3.org/2000/svg"
                                   fill="none"
@@ -218,7 +234,7 @@ export default function Servicios() {
                             </div>
                           </div>
                         </div>
-                        <div className="col-4">
+                        <div className="col-12 col-md-4 mb-4">
                           <div className="bg-white border border-gray-200 rounded-3xl overflow-hidden shadow ">
                             <a href="#">
                               <img
@@ -228,7 +244,7 @@ export default function Servicios() {
                                 alt=""
                               />
                             </a>
-                            <div className="px-5 py-2 rounded-t-xl">
+                            <div className="px-3 py-2 rounded-t-xl">
                               <p className="font-normal text-gray-700 text-sm">
                                 Electricidad
                               </p>
@@ -266,14 +282,14 @@ export default function Servicios() {
                               <div className="flex items-center text-xs mb-4">
                                 <a
                                   href="#"
-                                  className="underline text-primary-violet-secondary mr-1"
+                                  className="underline text-primary-violet-01 mr-1"
                                 >
                                   Ver Aliados
                                 </a>
                                 <p>prestadores de servicios</p>
                               </div>
 
-                              <div className="rounded-full px-4 py-1 bg-accent-violet flex items-center text-white">
+                              <div className="rounded-full px-4 py-1 bg-primary-violet-02 flex items-center text-white">
                                 <svg
                                   xmlns="http://www.w3.org/2000/svg"
                                   fill="none"
@@ -297,7 +313,7 @@ export default function Servicios() {
                             </div>
                           </div>
                         </div>
-                        <div className="col-4">
+                        <div className="col-12 col-md-4 mb-4">
                           <div className="bg-white border border-gray-200 rounded-3xl overflow-hidden shadow ">
                             <a href="#">
                               <img
@@ -307,7 +323,7 @@ export default function Servicios() {
                                 alt=""
                               />
                             </a>
-                            <div className="px-5 py-2 rounded-t-xl">
+                            <div className="px-3 py-2 rounded-t-xl">
                               <p className="font-normal text-gray-700 text-sm">
                                 Electricidad
                               </p>
@@ -345,14 +361,14 @@ export default function Servicios() {
                               <div className="flex items-center text-xs mb-4">
                                 <a
                                   href="#"
-                                  className="underline text-primary-violet-secondary mr-1"
+                                  className="underline text-primary-violet-01 mr-1"
                                 >
                                   Ver Aliados
                                 </a>
                                 <p>prestadores de servicios</p>
                               </div>
 
-                              <div className="rounded-full px-4 py-1 bg-accent-violet flex items-center text-white">
+                              <div className="rounded-full px-4 py-1 bg-primary-violet-02 flex items-center text-white">
                                 <svg
                                   xmlns="http://www.w3.org/2000/svg"
                                   fill="none"
@@ -383,10 +399,10 @@ export default function Servicios() {
               </div>
               <div className="col-12 mb-10">
                 <div className="rounded-2xl overflow-hidden w-full">
-                  <div className="flex">
-                    <div className="bg-zinc-200 flex-grow px-10 py-6">
+                  <div className="flex flex-col-reverse md:flex-row">
+                    <div className="bg-zinc-200 flex-grow px-5 md:px-10 py-6">
                       <div className="row">
-                        <div className="col-4">
+                        <div className="col-12 col-md-4 mb-4">
                           <div className="bg-white border border-gray-200 rounded-3xl overflow-hidden shadow ">
                             <a href="#">
                               <img
@@ -395,7 +411,7 @@ export default function Servicios() {
                                 alt=""
                               />
                             </a>
-                            <div className="px-5 py-2 rounded-t-xl">
+                            <div className="px-3 py-2 rounded-t-xl">
                               <p className="font-normal text-gray-700 text-sm">
                                 Electricidad
                               </p>
@@ -433,14 +449,14 @@ export default function Servicios() {
                               <div className="flex items-center text-xs mb-4">
                                 <a
                                   href="#"
-                                  className="underline text-primary-violet-secondary mr-1"
+                                  className="underline text-primary-violet-01 mr-1"
                                 >
                                   Ver Aliados
                                 </a>
                                 <p>prestadores de servicios</p>
                               </div>
 
-                              <div className="rounded-full px-4 py-1 bg-accent-violet flex items-center text-white">
+                              <div className="rounded-full px-4 py-1 bg-primary-violet-02 flex items-center text-white">
                                 <svg
                                   xmlns="http://www.w3.org/2000/svg"
                                   fill="none"
@@ -464,7 +480,7 @@ export default function Servicios() {
                             </div>
                           </div>
                         </div>
-                        <div className="col-4">
+                        <div className="col-12 col-md-4 mb-4">
                           <div className="bg-white border border-gray-200 rounded-3xl overflow-hidden shadow ">
                             <a href="#">
                               <img
@@ -474,7 +490,7 @@ export default function Servicios() {
                                 alt=""
                               />
                             </a>
-                            <div className="px-5 py-2 rounded-t-xl">
+                            <div className="px-3 py-2 rounded-t-xl">
                               <p className="font-normal text-gray-700 text-sm">
                                 Electricidad
                               </p>
@@ -512,14 +528,14 @@ export default function Servicios() {
                               <div className="flex items-center text-xs mb-4">
                                 <a
                                   href="#"
-                                  className="underline text-primary-violet-secondary mr-1"
+                                  className="underline text-primary-violet-01 mr-1"
                                 >
                                   Ver Aliados
                                 </a>
                                 <p>prestadores de servicios</p>
                               </div>
 
-                              <div className="rounded-full px-4 py-1 bg-accent-violet flex items-center text-white">
+                              <div className="rounded-full px-4 py-1 bg-primary-violet-02 flex items-center text-white">
                                 <svg
                                   xmlns="http://www.w3.org/2000/svg"
                                   fill="none"
@@ -543,7 +559,7 @@ export default function Servicios() {
                             </div>
                           </div>
                         </div>
-                        <div className="col-4">
+                        <div className="col-12 col-md-4 mb-4">
                           <div className="bg-white border border-gray-200 rounded-3xl overflow-hidden shadow ">
                             <a href="#">
                               <img
@@ -553,7 +569,7 @@ export default function Servicios() {
                                 alt=""
                               />
                             </a>
-                            <div className="px-5 py-2 rounded-t-xl">
+                            <div className="px-3 py-2 rounded-t-xl">
                               <p className="font-normal text-gray-700 text-sm">
                                 Electricidad
                               </p>
@@ -591,14 +607,14 @@ export default function Servicios() {
                               <div className="flex items-center text-xs mb-4">
                                 <a
                                   href="#"
-                                  className="underline text-primary-violet-secondary mr-1"
+                                  className="underline text-primary-violet-01 mr-1"
                                 >
                                   Ver Aliados
                                 </a>
                                 <p>prestadores de servicios</p>
                               </div>
 
-                              <div className="rounded-full px-4 py-1 bg-accent-violet flex items-center text-white">
+                              <div className="rounded-full px-4 py-1 bg-primary-violet-02 flex items-center text-white">
                                 <svg
                                   xmlns="http://www.w3.org/2000/svg"
                                   fill="none"
@@ -624,7 +640,7 @@ export default function Servicios() {
                         </div>
                       </div>
                     </div>
-                    <div className="bg-accent-violet px-4 py-10 flex-shrink-0 w-60">
+                    <div className="bg-primary-violet-02 px-4 py-10 w-full md:flex-shrink-0 md:w-60">
                       <div className="flex justify-center h-full flex-col">
                         <h3 className="text-center text-white text-xl mb-5 font-bold">
                           Electrodomesticos
@@ -636,7 +652,7 @@ export default function Servicios() {
                         </p>
                         <button
                           type="button"
-                          className="text-primary-violet mx-auto shadow bg-white hover:bg-primary-violet/10 focus:ring-4 focus:ring-primary-violet/30 rounded-full text-md px-8 py-1 mb-2 focus:outline-none font-bold flex items-center justify-center"
+                          className="text-primary-violet-01 mx-auto shadow bg-white hover:bg-primary-violet/10 focus:ring-4 focus:ring-primary-violet/30 rounded-full text-md px-8 py-1 mb-2 focus:outline-none font-bold flex items-center justify-center"
                         >
                           Ver más
                         </button>
@@ -647,8 +663,8 @@ export default function Servicios() {
               </div>
               <div className="col-12 mb-10">
                 <div className="rounded-2xl overflow-hidden w-full">
-                  <div className="flex">
-                    <div className="bg-accent-violet px-4 py-10 flex-shrink-0 w-60">
+                  <div className="flex flex-col md:flex-row">
+                    <div className="bg-primary-violet-02 px-4 py-10 w-full md:flex-shrink-0 md:w-60">
                       <div className="flex justify-center h-full flex-col">
                         <h3 className="text-center text-white text-xl mb-5 font-bold">
                           Jardinería
@@ -661,15 +677,15 @@ export default function Servicios() {
                         </p>
                         <button
                           type="button"
-                          className="text-primary-violet mx-auto shadow bg-white hover:bg-primary-violet/10 focus:ring-4 focus:ring-primary-violet/30 rounded-full text-md px-8 py-1 mb-2 focus:outline-none font-bold flex items-center justify-center"
+                          className="text-primary-violet-01 mx-auto shadow bg-white hover:bg-primary-violet/10 focus:ring-4 focus:ring-primary-violet/30 rounded-full text-md px-8 py-1 mb-2 focus:outline-none font-bold flex items-center justify-center"
                         >
                           Ver más
                         </button>
                       </div>
                     </div>
-                    <div className="bg-zinc-200 flex-grow px-10 py-6">
+                    <div className="bg-zinc-200 flex-grow px-5 md:px-10 py-6">
                       <div className="row">
-                        <div className="col-4">
+                        <div className="col-12 col-md-4 mb-4">
                           <div className="bg-white border border-gray-200 rounded-3xl overflow-hidden shadow ">
                             <a href="#">
                               <img
@@ -678,7 +694,7 @@ export default function Servicios() {
                                 alt=""
                               />
                             </a>
-                            <div className="px-5 py-2 rounded-t-xl">
+                            <div className="px-3 py-2 rounded-t-xl">
                               <p className="font-normal text-gray-700 text-sm">
                                 Jardinería
                               </p>
@@ -716,14 +732,14 @@ export default function Servicios() {
                               <div className="flex items-center text-xs mb-4">
                                 <a
                                   href="#"
-                                  className="underline text-primary-violet-secondary mr-1"
+                                  className="underline text-primary-violet-01 mr-1"
                                 >
                                   Ver Aliados
                                 </a>
                                 <p>prestadores de servicios</p>
                               </div>
 
-                              <div className="rounded-full px-4 py-1 bg-accent-violet flex items-center text-white">
+                              <div className="rounded-full px-4 py-1 bg-primary-violet-02 flex items-center text-white">
                                 <svg
                                   xmlns="http://www.w3.org/2000/svg"
                                   fill="none"
@@ -747,7 +763,7 @@ export default function Servicios() {
                             </div>
                           </div>
                         </div>
-                        <div className="col-4">
+                        <div className="col-12 col-md-4 mb-4">
                           <div className="bg-white border border-gray-200 rounded-3xl overflow-hidden shadow ">
                             <a href="#">
                               <img
@@ -757,7 +773,7 @@ export default function Servicios() {
                                 alt=""
                               />
                             </a>
-                            <div className="px-5 py-2 rounded-t-xl">
+                            <div className="px-3 py-2 rounded-t-xl">
                               <p className="font-normal text-gray-700 text-sm">
                                 Jardinería
                               </p>
@@ -795,14 +811,14 @@ export default function Servicios() {
                               <div className="flex items-center text-xs mb-4">
                                 <a
                                   href="#"
-                                  className="underline text-primary-violet-secondary mr-1"
+                                  className="underline text-primary-violet-01 mr-1"
                                 >
                                   Ver Aliados
                                 </a>
                                 <p>prestadores de servicios</p>
                               </div>
 
-                              <div className="rounded-full px-4 py-1 bg-accent-violet flex items-center text-white">
+                              <div className="rounded-full px-4 py-1 bg-primary-violet-02 flex items-center text-white">
                                 <svg
                                   xmlns="http://www.w3.org/2000/svg"
                                   fill="none"
@@ -826,7 +842,7 @@ export default function Servicios() {
                             </div>
                           </div>
                         </div>
-                        <div className="col-4">
+                        <div className="col-12 col-md-4 mb-4">
                           <div className="bg-white border border-gray-200 rounded-3xl overflow-hidden shadow ">
                             <a href="#">
                               <img
@@ -836,7 +852,7 @@ export default function Servicios() {
                                 alt=""
                               />
                             </a>
-                            <div className="px-5 py-2 rounded-t-xl">
+                            <div className="px-3 py-2 rounded-t-xl">
                               <p className="font-normal text-gray-700 text-sm">
                                 Jardinería
                               </p>
@@ -874,14 +890,14 @@ export default function Servicios() {
                               <div className="flex items-center text-xs mb-4">
                                 <a
                                   href="#"
-                                  className="underline text-primary-violet-secondary mr-1"
+                                  className="underline text-primary-violet-01 mr-1"
                                 >
                                   Ver Aliados
                                 </a>
                                 <p>prestadores de servicios</p>
                               </div>
 
-                              <div className="rounded-full px-4 py-1 bg-accent-violet flex items-center text-white">
+                              <div className="rounded-full px-4 py-1 bg-primary-violet-02 flex items-center text-white">
                                 <svg
                                   xmlns="http://www.w3.org/2000/svg"
                                   fill="none"

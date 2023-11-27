@@ -344,7 +344,7 @@ export const RegisterForm = () => {
                                 value="si"
                                 {...register("servicio_ofrecido")}
                                 onChange={() => onServiceSelectionChange("si")}
-                                className="w-8 h-8 text-primary-violet-secondary bg-gray-100 border-gray-300 focus:ring-blue-500 focus:ring-2"
+                                className="w-8 h-8 text-pribg-primary-violet-01-secondary bg-gray-100 border-gray-300 focus:ring-blue-500 focus:ring-2"
                               />
                             </div>
                             <div className="flex items-center mr-4">
@@ -360,7 +360,7 @@ export const RegisterForm = () => {
                                 value="no"
                                 {...register("servicio_ofrecido")}
                                 onChange={() => onServiceSelectionChange("no")}
-                                className="w-8 h-8 text-primary-violet-secondary bg-gray-100 border-gray-300 focus:ring-blue-500 focus:ring-2"
+                                className="w-8 h-8 text-pribg-primary-violet-01-secondary bg-gray-100 border-gray-300 focus:ring-blue-500 focus:ring-2"
                               />
                             </div>
                           </div>
@@ -426,7 +426,7 @@ export const RegisterForm = () => {
                     <button
                       disabled
                       type="button"
-                      className="w-full text-white bg-primary-violet/80 hover:bg-primary-violet/60 focus:ring-4 focus:outline-none focus:ring-violet-300 font-medium  rounded-full text-xl px-5 py-2.5 text-center mr-2  flex justify-center items-center"
+                      className="w-full text-white bg-primary-violet-01 hover:bg-primary-violet-01/60 focus:ring-4 focus:outline-none focus:ring-violet-300 font-medium  rounded-full text-xl px-5 py-2.5 text-center mr-2  flex justify-center items-center"
                     >
                       <svg
                         aria-hidden="true"
@@ -450,7 +450,7 @@ export const RegisterForm = () => {
                   ) : (
                     <button
                       type="submit"
-                      className="w-full text-white bg-primary-violet/80 hover:bg-primary-violet/60 focus:ring-4 focus:outline-none focus:ring-violet-300 font-medium rounded-full text-xl px-5 py-2.5 text-center "
+                      className="w-full text-white bg-primary-violet-01 hover:bg-primary-violet-01/60 focus:ring-4 focus:outline-none focus:ring-violet-300 font-medium rounded-full text-xl px-5 py-2.5 text-center "
                     >
                       Confirma tu registro
                     </button>
@@ -494,7 +494,7 @@ export const RegisterForm = () => {
                   className="block mx-auto mb-5"
                   alt=""
                 />
-                <h3 className="text-center text-primary-violet-secondary font-bold text-5xl mb-4">
+                <h3 className="text-center text-pribg-primary-violet-01-secondary font-bold text-5xl mb-4">
                   Gracias
                 </h3>
                 <p className="text-zinc-700 text-lg text-center">

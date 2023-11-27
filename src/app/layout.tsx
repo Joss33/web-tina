@@ -5,8 +5,8 @@ import { Footer } from '@/components/Footer';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Tina | Conecta. Comparte. Prospera',
-  description: 'Welcome to Tina',
+  title: 'PERENNIALS | Conecta. Comparte. Prospera',
+  description: 'Welcome to PERENNIALS',
 }
 
 export default function RootLayout({children}: {children: React.ReactNode}) {
@@ -16,7 +16,7 @@ export default function RootLayout({children}: {children: React.ReactNode}) {
       <body>
         <div className="flex flex-col h-full">
           <Header/>
-            <div className='flex-grow bg-zinc-100'>
+            <div className='flex-grow bg-gray-50'>
               {children}
             </div>
           <Footer/>

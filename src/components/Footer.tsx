@@ -5,16 +5,16 @@ export const Footer = () => {
     <>
       <footer className="bg-gray-50 ">
         <div className="p-4 py-6 mx-auto max-w-screen-xl md:p-8 lg:-10">
-          <div className="grid grid-cols-2 gap-8 lg:grid-cols-6">
-            <div className="col-span-2">
+          <div className="grid grid-cols-1 gap-8 md:grid-flow-col">
+            <div className="">
               <a
                 href="#"
                 className="flex items-center mb-2 text-2xl font-semibold text-gray-900 sm:mb-0 "
               >
                 <img
-                  src="/assets/images/LOGO-TINA.svg"
+                  src="/assets/images/logo/logo-01.png"
                   className="h-12 mr-3"
-                  alt="Tina Logo"
+                  alt="PERENNIALS Logo"
                 />
               </a>
               <ul className="flex mt-5 space-x-6">
@@ -39,7 +39,8 @@ export const Footer = () => {
                 </li>
                 <li>
                   <a
-                    href="#"
+                    href="https://www.instagram.com/soyperennial/"
+                    target="_blank"
                     className="text-gray-500 hover:text-gray-900 "
                   >
                     <svg
@@ -56,27 +57,12 @@ export const Footer = () => {
                     </svg>
                   </a>
                 </li>
-                <li>
-                  <a
-                    href="#"
-                    className="text-gray-500 hover:text-gray-900 "
-                  >
-                    <svg
-                      className="w-5 h-5"
-                      fill="currentColor"
-                      viewBox="0 0 24 24"
-                      aria-hidden="true"
-                    >
-                      <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
-                    </svg>
-                  </a>
-                </li>
               </ul>
             </div>
             <div className="lg:mx-auto">
-              <h2 className="mb-6 text-base font-bold text-primary-violet uppercase ">
+              <div className="text-xl text-white text-center font-Montserrat-Bold bg-primary-violet-02 rounded-full py-2 px-8 mb-6 inline-flex ">
                 Acerca de
-              </h2>
+              </div>
               <ul className="text-gray-500 ">
                 <li className="mb-4">
                   <Link href="/about" className=" hover:underline">
@@ -84,7 +70,7 @@ export const Footer = () => {
                   </Link>
                 </li>
                 <li className="mb-4">
-                  <a href="#" className="hover:underline">
+                  <a href="/assets/pdf/Políticas de privacidad Tina.pdf" target="_blank" className="hover:underline">
                     Términos y condiciones
                   </a>
                 </li>
@@ -96,9 +82,9 @@ export const Footer = () => {
               </ul>
             </div>
             <div className="lg:mx-auto">
-              <h2 className="mb-6 text-base font-bold text-primary-violet uppercase ">
+              <div className="text-xl text-white text-center font-Montserrat-Bold bg-primary-violet-02 rounded-full py-2 px-8 mb-6 inline-flex  ">
                 Ayuda
-              </h2>
+              </div>
               <ul className="text-gray-500 ">
                 <li className="mb-4">
                   <a href="#" className="hover:underline">
@@ -118,9 +104,9 @@ export const Footer = () => {
               </ul>
             </div>
             <div className="lg:mx-auto">
-              <h2 className="mb-6 text-base font-bold text-primary-violet uppercase ">
+              <div className="text-xl text-white text-center font-Montserrat-Bold bg-primary-violet-02 rounded-full py-2 px-8 mb-6 inline-flex  ">
                 Ir al Blog
-              </h2>
+              </div>
               <ul className="text-gray-500 ">
                 <li className="mb-4">
                   <a href="#" className="hover:underline">

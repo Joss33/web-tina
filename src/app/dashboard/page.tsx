@@ -1,43 +1,46 @@
 import { Search } from "@/components/Search";
 import Head from "next/head";
+import Link from "next/link";
 
 export default function Dashboard() {
   return (
     <>
       <Head>
-        <title> Dashboard | Tina</title>
+        <title> Dashboard | PERENNIALS</title>
       </Head>
 
       <main role="main">
         <section role="banner">
-          <div className="bg-[url('/assets/images/dashboard/banner-web-home.jpg')] w-full md:h-[572px] bg-cover object-cover flex items-center">
+          <div className=" bg-stone-200 lg:bg-[url('/assets/images/dashboard/banner-web-home.jpg')] py-10 w-full md:h-[572px] bg-cover object-cover flex items-center">
             <div className="max-w-screen-xl w-full px-5 md:px-12 lg:px-20 mx-auto">
               <div className="max-w-md">
-                <h3 className="text-7xl font-bold text-accent-violet mb-3">
+                <h3 className="text-6xl text-center lg:text-left font-Montserrat-Bold font-bold text-primary-violet-02 mb-3">
                   Contrata experiencia
                 </h3>
-                <p className="text-4xl text-primary-violet/90  mb-10">
+                <p className="text-4xl text-center lg:text-left font-Montserrat-Medium font-medium text-primary-violet-01  mb-10">
                   Conoce nuestro directorio de servicios
                 </p>
-                <button
-                  type="button"
-                  className="text-primary-violet shadow bg-primary-yellow hover:bg-primary-yellow/10 focus:ring-4 focus:ring-primary-yellow/30 rounded-full text-2xl px-12 py-2.5 pr-20 mr-2 mb-2 focus:outline-none font-bold flex items-center justify-center relative"
-                >
-                  COTIZAR
-                  <span className="absolute top-2/3 -translate-y-1/2 right-0">
-                    <img src="/assets/images/dashboard/Grupo 1191.svg" alt="" />
-                  </span>
-                </button>
+                <Link href={'/servicios'}>
+                  <button
+                    type="button"
+                    className="text-primary-violet-01 mx-auto lg:mx-0 font-Montserrat-Bold shadow bg-primary-yellow-01 hover:bg-primary-yellow-01/80 focus:ring-4 focus:ring-primary-yellowbg-primary-yellow-01/30 rounded-full text-2xl px-12 py-2.5 pr-20 lg:mr-2 mb-2 focus:outline-none font-bold flex items-center justify-center relative"
+                  >
+                    COTIZAR
+                    <span className="absolute top-2/3 -translate-y-1/2 right-0">
+                      <img src="/assets/images/dashboard/Grupo 1191.svg" alt="" />
+                    </span>
+                  </button>
+                </Link>
               </div>
             </div>
           </div>
         </section>
 
-        {/* <Search /> */}
+        <Search title="¡Te echamos una mano!" />
 
         <section>
           <div className="bg-gray-50">
-            <h2 className="text-center text-3xl font-bold py-10 text-primary-violet">
+            <h2 className="text-center text-3xl font-bold font-Montserrat-Bold py-10 text-primary-violet-01">
               Servicios destacados
             </h2>
 
@@ -51,9 +54,9 @@ export default function Dashboard() {
                       alt=""
                     />
                   </a>
-                  <div className="p-5 rounded-t-xl">
-                    <div className="flex items-center gap-2 flex-wrap mb-4">
-                      <div className="px-4 py-2 rounded-full bg-white shadow-md">
+                  <div className="p-5 rounded-t-3xl bg-white -mt-5 relative">
+                    <div className="flex items-center justify-end gap-2 flex-wrap -mt-9 mb-4">
+                      <div className="px-2.5 py-2 rounded-full bg-white shadow-md">
                         <div className="flex items-center">
                           <svg
                             className="w-4 h-4 text-yellow-400 mr-1"
@@ -70,7 +73,7 @@ export default function Dashboard() {
                         </div>
                       </div>
 
-                      <div className="px-4 py-2 rounded-full bg-red-100 shadow-md">
+                      <div className="px-2.5 py-2 rounded-full bg-red-100 shadow-md">
                         <div className="flex items-center">
                           <p className="ml-2 text-xs  text-gray-900 ">
                             Para tu hogar
@@ -79,11 +82,11 @@ export default function Dashboard() {
                       </div>
                     </div>
 
-                    <p className="mb-3 font-normal text-gray-700 ">
+                    <p className="mb-3 font-normal text-gray-700 text-sm ">
                       Aseo y desinfección
                     </p>
                     <a href="#">
-                      <h5 className="mb-2 text-sm font-bold tracking-tight text-gray-900 ">
+                      <h5 className="mb-2 text-sm font-bold tracking-tight text-gray-900 font-Montserrat-Bold ">
                         Limpieza y descontaminación casa u oﬁcina
                       </h5>
                     </a>
@@ -119,22 +122,23 @@ export default function Dashboard() {
                       <div className="flex-shrink-0 mr-4">
                         <img
                           className="w-8 h-8 rounded-full"
-                          src="/docs/images/people/profile-picture-1.jpg"
+                          src="/assets/images/perfil/Enmascarar grupo 29@2x.png"
                           alt="Neil image"
                         />
                       </div>
                       <div className="flex-1 min-w-0">
-                        <p className="text-xs font-medium text-gray-900 truncate ">
-                          Julio Díaz Gomez
+                        <p className="text-xs font-bold font-Montserrat-Bold text-gray-900 truncate ">
+                          Luisa Maria Mendoza
                         </p>
-                        <a
-                          href="#"
+                        <Link
+                          href={`/perfil/${'luisa-maria-mendoza'}`}
                           className="text-xs underline text-gray-500 truncate "
                         >
                           Ver perfil
-                        </a>
+                        </Link>
                       </div>
                     </div>
+
                   </div>
                 </div>
 
@@ -146,9 +150,9 @@ export default function Dashboard() {
                       alt=""
                     />
                   </a>
-                  <div className="p-5 rounded-t-xl">
-                    <div className="flex items-center gap-2 flex-wrap mb-4">
-                      <div className="px-4 py-2 rounded-full bg-white shadow-md">
+                  <div className="p-5 rounded-t-3xl bg-white -mt-5 relative">
+                    <div className="flex items-center justify-end gap-2 flex-wrap -mt-9 mb-4">
+                      <div className="px-2.5 py-2 rounded-full bg-white shadow-md">
                         <div className="flex items-center">
                           <svg
                             className="w-4 h-4 text-yellow-400 mr-1"
@@ -165,7 +169,7 @@ export default function Dashboard() {
                         </div>
                       </div>
 
-                      <div className="px-4 py-2 rounded-full bg-red-100 shadow-md">
+                      <div className="px-2.5 py-2 rounded-full bg-red-100 shadow-md">
                         <div className="flex items-center">
                           <p className="ml-2 text-xs  text-gray-900 ">
                             Para tu emrpesa
@@ -174,11 +178,11 @@ export default function Dashboard() {
                       </div>
                     </div>
 
-                    <p className="mb-3 font-normal text-gray-700 ">
+                    <p className="mb-3 font-normal text-gray-700 text-sm ">
                       Oficina y negocios
                     </p>
                     <a href="#">
-                      <h5 className="mb-2 text-sm font-bold tracking-tight text-gray-900 ">
+                      <h5 className="mb-2 text-sm font-bold tracking-tight text-gray-900 font-Montserrat-Bold ">
                         Asistente o secretaria empresarial a distancia
                       </h5>
                     </a>
@@ -214,20 +218,20 @@ export default function Dashboard() {
                       <div className="flex-shrink-0 mr-4">
                         <img
                           className="w-8 h-8 rounded-full"
-                          src="/docs/images/people/profile-picture-1.jpg"
+                          src="/assets/images/perfil/Enmascarar grupo 2-2@2x.png"
                           alt="Neil image"
                         />
                       </div>
                       <div className="flex-1 min-w-0">
-                        <p className="text-xs font-medium text-gray-900 truncate ">
+                        <p className="text-xs font-bold font-Montserrat-Bold text-gray-900 truncate ">
                           Juliana Robayo
                         </p>
-                        <a
-                          href="#"
+                        <Link
+                          href={`/perfil/${'juliana-robayo'}`}
                           className="text-xs underline text-gray-500 truncate "
                         >
                           Ver perfil
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -241,9 +245,9 @@ export default function Dashboard() {
                       alt=""
                     />
                   </a>
-                  <div className="p-5 rounded-t-xl">
-                    <div className="flex items-center gap-2 flex-wrap mb-4">
-                      <div className="px-4 py-2 rounded-full bg-white shadow-md">
+                  <div className="p-5 rounded-t-3xl bg-white -mt-5 relative">
+                    <div className="flex items-center justify-end gap-2 flex-wrap -mt-9 mb-4">
+                      <div className="px-2.5 py-2 rounded-full bg-white shadow-md">
                         <div className="flex items-center">
                           <svg
                             className="w-4 h-4 text-yellow-400 mr-1"
@@ -260,7 +264,7 @@ export default function Dashboard() {
                         </div>
                       </div>
 
-                      <div className="px-4 py-2 rounded-full bg-red-100 shadow-md">
+                      <div className="px-2.5 py-2 rounded-full bg-red-100 shadow-md">
                         <div className="flex items-center">
                           <p className="ml-2 text-xs  text-gray-900 ">
                             Para tu hogar
@@ -269,11 +273,11 @@ export default function Dashboard() {
                       </div>
                     </div>
 
-                    <p className="mb-3 font-normal text-gray-700 ">
+                    <p className="mb-3 font-normal text-gray-700 text-sm ">
                       Cocina
                     </p>
                     <a href="#">
-                      <h5 className="mb-2 text-sm font-bold tracking-tight text-gray-900 ">
+                      <h5 className="mb-2 text-sm font-bold tracking-tight text-gray-900 font-Montserrat-Bold ">
                         Preparación almuerzos y cenas
                       </h5>
                     </a>
@@ -309,20 +313,20 @@ export default function Dashboard() {
                       <div className="flex-shrink-0 mr-4">
                         <img
                           className="w-8 h-8 rounded-full"
-                          src="/docs/images/people/profile-picture-1.jpg"
+                          src="/assets/images/perfil/Enmascarar grupo 2-3@2x.png"
                           alt="Neil image"
                         />
                       </div>
                       <div className="flex-1 min-w-0">
-                        <p className="text-xs font-medium text-gray-900 truncate ">
+                        <p className="text-xs font-bold font-Montserrat-Bold text-gray-900 truncate ">
                           Maria Jaimes
                         </p>
-                        <a
-                          href="#"
+                        <Link
+                          href={`/perfil/${'maria-jaimes'}`}
                           className="text-xs underline text-gray-500 truncate "
                         >
                           Ver perfil
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -336,9 +340,9 @@ export default function Dashboard() {
                       alt=""
                     />
                   </a>
-                  <div className="p-5 rounded-t-xl">
-                    <div className="flex items-center gap-2 flex-wrap mb-4">
-                      <div className="px-4 py-2 rounded-full bg-white shadow-md">
+                  <div className="p-5 rounded-t-3xl bg-white -mt-5 relative">
+                    <div className="flex items-center justify-end gap-2 flex-wrap -mt-9 mb-4">
+                      <div className="px-2.5 py-2 rounded-full bg-white shadow-md">
                         <div className="flex items-center">
                           <svg
                             className="w-4 h-4 text-yellow-400 mr-1"
@@ -355,7 +359,7 @@ export default function Dashboard() {
                         </div>
                       </div>
 
-                      <div className="px-4 py-2 rounded-full bg-red-100 shadow-md">
+                      <div className="px-2.5 py-2 rounded-full bg-red-100 shadow-md">
                         <div className="flex items-center">
                           <p className="ml-2 text-xs  text-gray-900 ">
                             Para tu hogar
@@ -364,11 +368,11 @@ export default function Dashboard() {
                       </div>
                     </div>
 
-                    <p className="mb-3 font-normal text-gray-700 ">
+                    <p className="mb-3 font-normal text-gray-700 text-sm ">
                       Reparaciones
                     </p>
                     <a href="#">
-                      <h5 className="mb-2 text-sm font-bold tracking-tight text-gray-900 ">
+                      <h5 className="mb-2 text-sm font-bold tracking-tight text-gray-900 font-Montserrat-Bold ">
                         Mantenimientos y arreglos eléctricos y de tuberías
                       </h5>
                     </a>
@@ -404,20 +408,20 @@ export default function Dashboard() {
                       <div className="flex-shrink-0 mr-4">
                         <img
                           className="w-8 h-8 rounded-full"
-                          src="/docs/images/people/profile-picture-1.jpg"
+                          src="/assets/images/perfil/PERFIL03.jpg"
                           alt="Neil image"
                         />
                       </div>
                       <div className="flex-1 min-w-0">
-                        <p className="text-xs font-medium text-gray-900 truncate ">
-                          Mario Giminez
+                        <p className="text-xs font-bold font-Montserrat-Bold text-gray-900 truncate ">
+                          Mario Jimenez
                         </p>
-                        <a
-                          href="#"
+                        <Link
+                          href={`/perfil/${'mario-jaimes'}`}
                           className="text-xs underline text-gray-500 truncate "
                         >
                           Ver perfil
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -430,12 +434,12 @@ export default function Dashboard() {
         <section>
           <div className="max-w-screen-xl w-full px-5 md:px-12 lg:px-20 py-10 mx-auto">
             <div className="row">
-              <div className="col-12 col-lg-8">
+              <div className="col-12 col-lg-8 mb-4">
                 <div className="bg-zinc-200 w-full rounded-3xl">
                   <div className="row">
-                    <div className="col-6">
+                    <div className="col-12 col-lg-6">
                       <div className="py-6 pl-12 pr-9">
-                        <div className="bg-primary-yellow text-primary-violet inline-flex items-center font-semibold text-lg rounded-full px-5 py-2 mb-2.5 relative">
+                        <div className="bg-primary-yellow-01 text-primary-violet-01 inline-flex items-center font-semibold text-base rounded-full px-5 py-2 mb-2.5 relative">
                           <img
                             src="/assets/images/dashboard/Grupo 44.svg"
                             width={34}
@@ -445,26 +449,26 @@ export default function Dashboard() {
                           />
                           Capacitación
                         </div>
-                        <p className="text-3xl font-bold text-gray-800 mb-5">
+                        <p className="text-2xl font-bold font-Montserrat-Bold text-gray-800 mb-5">
                           Clase GRATIS Pizzas gourmet
                         </p>
                         <p className="text-gray-800 ">
                           Martes 25 de octubre del 2023
                         </p>
-                        <p className="text-gray-800 font-bold mb-5">de 5:00 p.m. a 8:00 p.m.</p>
-                        <button
-                          type="button"
-                          className="text-white shadow bg-primary-violet-secondary hover:bg-primary-violet/10 focus:ring-4 focus:ring-primary-violet/30 rounded-full text-base px-14 py-2.5 mr-2 mb-2 focus:outline-none font-semibold flex items-center justify-center relative leading-[1.125rem] "
+                        <p className="text-gray-800 font-bold font-Montserrat-Bold mb-5">de 5:00 p.m. a 8:00 p.m.</p>
+                        <a
+                          href="https://forms.gle/8TvVqQhERqQhERq7fTA7e7"
+                          className="text-white shadow bg-primary-violet-01 hover:bg-primary-violet-01/10 focus:ring-4 focus:ring-primary-violet-01/30 rounded-full text-base px-14 py-2.5 mr-2 mb-2 focus:outline-none font-semibold flex items-center justify-center relative leading-[1.125rem] "
                         >
                           REGÍSTRATE AQUÍ
-                        </button>
+                        </a>
                       </div>
                     </div>
-                    <div className="col">
-                      <div className="w-full h-[18.375rem] rounded-3xl overflow-hidden">
+                    <div className="col-12 col-lg">
+                      <div className="rounded-3xl overflow-hidden">
                         <img
                           src="/assets/images/dashboard/servicios/IMAGEN-SERVICIOS-05.jpg"
-                          className="w-full h-full bg-cover bg-no-repeat object-cover"
+                          className="w-full h-[18.75rem] bg-cover bg-no-repeat"
                           alt=""
                         />
                       </div>
@@ -472,12 +476,12 @@ export default function Dashboard() {
                   </div>
                 </div>
               </div>
-              <div className="col">
+              <div className="col-12 col-lg mb-4">
                 <div className="bg-zinc-200 rounded-2xl">
-                  <div className="relative ">
+                  <div className="relative rounded-2xl overflow-hidden">
                     <img
                       src="/assets/images/dashboard/imagen home.png"
-                      className="w-full h-48 relative z-0"
+                      className="w-full h-48 relative z-0 bg-cover object-cover"
                       alt=""
                     />
                     <div className="absolute bottom-0 z-10">

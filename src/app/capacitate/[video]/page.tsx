@@ -1,17 +1,32 @@
+'use client'
 import Head from "next/head";
+import { useRouter } from 'next/navigation'
 
 export default function CapacitateVideo(){
+
+  const router = useRouter();
+
   return (
     <>
 
       <Head>
-        <title> Video | Tina</title>
+        <title> Video | PERENNIALS</title>
       </Head>
 
-      <main role="main" className="mt-20">
+      <main role="main">
         <div className="max-w-screen-md w-full mx-auto mb-10">
 
-          <div className="pt-10 pb-10">
+          <div className="pt-10 pb-10 px-5">
+
+            <button className="text-gray-700" type="button" onClick={() => router.back()}>
+              <div className="flex items-center mb-4">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 mr-2 ">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" />
+                </svg>
+                <span className="font-semibold">Volver</span>
+              </div>
+            </button>
+
             <video className="w-full h-auto max-w-full border border-gray-200 rounded-lg  " controls>
               <source src="/docs/videos/flowbite.mp4" type="video/mp4"/>
               Your browser does not support the video tag.
@@ -22,10 +37,10 @@ export default function CapacitateVideo(){
           <div className="px-3">
             <div className="row">
               <div className="col-12 mx-auto">
-                <h2 className="text-center text-primary-violet-secondary font-bold text-3xl mb-7">
+                <h2 className="text-center font-Montserrat-Bold text-primary-violet-01 font-bold text-3xl mb-7">
                   Empleabilidad Informal
                 </h2>
-                <p className="text-center text-zinc-500 text-sm mb-10">
+                <p className="text-zinc-500 text-sm mb-10">
                   ​¿Quieres despejar todas tus dudas sobre la empleabilidad? ¡Este webinar es para ti! En el Día del Programador nos acompañará Alanis Gosiker, Tech Recruiter/Head Hunter - team builder para startups. Aprovecha esta oportunidad para aclarar todas tus consultas relacionadas a la empleabilidad, tips para y armado de CV y todo lo que necesitas saber para seguir desarrollando tu perfil profesional.
                 </p>
               </div>
@@ -34,10 +49,10 @@ export default function CapacitateVideo(){
             <div className="row items-center mb-10">
               <div className="col-12">
                 <div className="row">
-                  <div className="col-auto">
+                  <div className="col-auto mb-3">
                     <img className="rounded-full w-20 h-20" src="/assets/images/Enmascarar grupo 18@2x.png" alt="Extra large avatar" />
                   </div>
-                  <div className="col flex flex-col justify-center">
+                  <div className="col flex flex-col justify-center mb-3">
                     <p className="font-bold text-zinc-800">
                       Alanis Gosiker
                     </p>
@@ -45,7 +60,7 @@ export default function CapacitateVideo(){
                       Tech Recruiter/Head Hunter - team builder para startups.
                     </p>
                   </div>
-                  <div className="col-auto">
+                  <div className="col-auto mb-3">
                     <p>
                       Contenido
                     </p>
@@ -53,8 +68,8 @@ export default function CapacitateVideo(){
                       Gratuito
                     </p>
                   </div>
-                  <div className="col-auto">
-                    <button type="button" className="text-primary-violet-secondary bg-primary-yellow hover:bg-primary-yellow/80 focus:ring-4 focus:ring-primary-yellow/30 font-medium rounded-xl text-lg px-10 py-2 focus:outline-none ">Inscribirse</button>
+                  <div className="col-auto mb-3">
+                    <button type="button" className="btn btn-primary-violet-03 ">Inscribirse</button>
                   </div>
                 </div>
               </div>
@@ -62,7 +77,7 @@ export default function CapacitateVideo(){
 
             <div className="row">
               <div className="col-12">
-                <h3 className="text-xl font-bold text-primary-violet-secondary mb-5">
+                <h3 className="text-xl font-bold text-primary-violet-01 mb-5">
                   Comentarios
                 </h3>
               </div>
@@ -70,19 +85,15 @@ export default function CapacitateVideo(){
                 <article className="p-6 mb-6  text-base bg-white rounded-lg ">
                   <footer className="flex justify-between items-center mb-2">
                     <div className="flex items-center">
-                      <p className="inline-flex items-center mr-3 text-sm text-gray-900 ">
+                      <p className="inline-flex items-center mr-3 text-lg text-gray-900 ">
                         <img
-                          className="mr-2 w-6 h-6 rounded-full"
+                          className="mr-2 w-12 h-12 rounded-full"
                           src="https://flowbite.com/docs/images/people/profile-picture-5.jpg"
                           alt="Jese Leos"
                         />
                         Jese Leos
                       </p>
-                      <p className="text-sm text-gray-600 ">
-                        <time  dateTime="2022-02-12" title="February 12th, 2022">
-                          Feb. 12, 2022
-                        </time>
-                      </p>
+                      
                     </div>
                     
                   </footer>
@@ -109,7 +120,7 @@ export default function CapacitateVideo(){
                           d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"
                         />
                       </svg>
-                      Reply
+                      Responder
                     </button>
                   </div>
                 </article>
@@ -118,19 +129,15 @@ export default function CapacitateVideo(){
                 <article className="p-6 mb-6  text-base bg-white rounded-lg ">
                   <footer className="flex justify-between items-center mb-2">
                     <div className="flex items-center">
-                      <p className="inline-flex items-center mr-3 text-sm text-gray-900 ">
+                      <p className="inline-flex items-center mr-3 text-lg text-gray-900 ">
                         <img
-                          className="mr-2 w-6 h-6 rounded-full"
+                          className="mr-2 w-12 h-12 rounded-full"
                           src="https://flowbite.com/docs/images/people/profile-picture-5.jpg"
                           alt="Jese Leos"
                         />
                         Jese Leos
                       </p>
-                      <p className="text-sm text-gray-600 ">
-                        <time  dateTime="2022-02-12" title="February 12th, 2022">
-                          Feb. 12, 2022
-                        </time>
-                      </p>
+                      
                     </div>
                     
                   </footer>
@@ -157,7 +164,7 @@ export default function CapacitateVideo(){
                           d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"
                         />
                       </svg>
-                      Reply
+                      Responder
                     </button>
                   </div>
                 </article>
@@ -166,19 +173,15 @@ export default function CapacitateVideo(){
                 <article className="p-6 mb-6  text-base bg-white rounded-lg ">
                   <footer className="flex justify-between items-center mb-2">
                     <div className="flex items-center">
-                      <p className="inline-flex items-center mr-3 text-sm text-gray-900 ">
+                      <p className="inline-flex items-center mr-3 text-lg text-gray-900 ">
                         <img
-                          className="mr-2 w-6 h-6 rounded-full"
+                          className="mr-2 w-12 h-12 rounded-full"
                           src="https://flowbite.com/docs/images/people/profile-picture-5.jpg"
                           alt="Jese Leos"
                         />
                         Jese Leos
                       </p>
-                      <p className="text-sm text-gray-600 ">
-                        <time  dateTime="2022-02-12" title="February 12th, 2022">
-                          Feb. 12, 2022
-                        </time>
-                      </p>
+                      
                     </div>
                     
                   </footer>
@@ -205,7 +208,7 @@ export default function CapacitateVideo(){
                           d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"
                         />
                       </svg>
-                      Reply
+                      Responder
                     </button>
                   </div>
                 </article>

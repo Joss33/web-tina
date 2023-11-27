@@ -15,18 +15,18 @@ export default function Registro() {
   return (
     <>
       <Head>
-        <title> Registro | Tina</title>
+        <title> Registro | PERENNIALS</title>
       </Head>
 
       <main role="main">
         <section role="banner">
-          <div className="bg-[url('/assets/images/registro/formulario.jpg')] w-full md:h-[572px] relative bg-cover object-cover flex items-center">
+          <div className=" bg-primary-violet-02 md:bg-[url('/assets/images/registro/formulario.jpg')] w-full md:h-[572px] relative bg-cover object-cover flex items-center">
             <div className="max-w-screen-xl w-full px-5 md:px-12 lg:px-20 mx-auto">
-              <div className="max-w-xl ">
-                <h3 className="text-6xl font-bold text-center text-white mb-3">
+              <div className="max-w-2xl py-10">
+                <h3 className="text-3xl md:text-6xl font-Montserrat-Bold font-bold text-center text-white mb-3">
                   ÚNETE A NUESTRA COMUNIDAD
                 </h3>
-                <p className="text-3xl text-center text-white font-light">
+                <p className="text-xl md:text-3xl text-center text-white font-light">
                   Diligencia el formulario
                 </p>
               </div>

@@ -9,13 +9,10 @@ module.exports = {
     extend: {
       colors: {
         primary: {
-          yellow: '#FEC602',
-          violet: '#350A6D',
-          'violet-secondary': '#4E1480',
+          'violet-01': '#4E1480',
+          'violet-02': '#8E80E2',
+          'yellow-01': '#FFB000',
         },
-        accent: {
-          violet: '#8E80E2'
-        }
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
@@ -24,5 +21,7 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/forms'),
+  ],
 }
